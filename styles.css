@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -55,7 +55,6 @@ a {
 
   position: relative;
   transform: translateY(0);
-  /* color: #6ab04c; */
   animation: secondary 2s ease;
 }
 
@@ -81,7 +80,6 @@ a {
   }
   80% {
     transform: translateY(-85px);
-    /* margin-bottom: -84px; */
   }
 }
 
@@ -181,4 +179,131 @@ a {
 
 .icon-text {
   text-align: center;
+}
+.icon-text-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .title-text {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+
+    animation: titleMobile 2s ease;
+  }
+
+  @keyframes titleMobile {
+    0% {
+      opacity: 0%;
+    }
+    30% {
+      letter-spacing: 6px;
+      color: black;
+      font-size: 2rem;
+    }
+    80% {
+      letter-spacing: 3px;
+    }
+  }
+
+  .secondary-text {
+    font-size: 1rem;
+
+    animation: secondary 2s ease;
+  }
+
+  .icons-container {
+    flex-direction: column;
+    padding-top: 50vh;
+    /* display: flex;
+  
+    justify-content: center;
+    overflow: hidden;
+   ;
+  
+    width: 100%; */
+  }
+
+  .icon-box {
+    margin: 10px auto 10px auto;
+    height: 50px;
+    width: 80%;
+    padding-left: 20px;
+
+    display: relative;
+    transform: translateY(-100vw);
+
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: iconAnimationMobile 3s ease;
+    animation-fill-mode: forwards;
+  }
+  .icon-box4 {
+    margin: 10px auto 10px auto;
+    padding-left: 20px;
+    height: 50px;
+    width: 80%;
+
+    display: relative;
+    transform: translateY(-100vw);
+
+    overflow: hidden;
+
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: iconAnimationMobile 3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+    margin-left: auto;
+  }
+
+  .icon-text {
+    display: none;
+  }
+  .icon-text-mobile {
+    color: #c00000;
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 0.75rem;
+    display: inline-block;
+  }
+
+  .icon-box:hover {
+    color: #c00000;
+    border: 2px solid #c00000;
+  }
+  .icon-box4:hover {
+    color: #c00000;
+    border: 2px solid #c00000;
+  }
+  .i-res {
+    padding-left: 0px;
+  }
+
+  @keyframes iconAnimationMobile {
+    0% {
+      transform: translateX(-100vw);
+    }
+    70% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 }
