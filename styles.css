@@ -55,45 +55,19 @@ a {
 
   position: relative;
   transform: translateY(0);
-  animation: secondary 2s ease;
+  animation: secondary 1s ease;
 }
 
-@keyframes title {
-  0% {
-    opacity: 0%;
-    /* margin-bottom: -85px; */
-  }
-  30% {
-    letter-spacing: 20px;
-    color: black;
-    font-size: 5rem;
-    /* margin-bottom: -84px; */
-  }
-  80% {
-    letter-spacing: 8px;
-    /* margin-bottom: -84px; */
-  }
-}
+
 @keyframes secondary {
   0% {
     transform: translateY(-85px);
   }
-  80% {
+  40% {
     transform: translateY(-85px);
   }
 }
 
-@keyframes iconAnimation {
-  0% {
-    transform: translateY(120px);
-  }
-  70% {
-    transform: translateY(120px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 
 .icons-container {
   display: flex;
@@ -112,9 +86,6 @@ a {
   height: 100px;
   width: 100px;
 
-  display: relative;
-  transform: translateY(120px);
-
   overflow: hidden;
 
   justify-content: center;
@@ -124,8 +95,6 @@ a {
   border: 2px solid black;
   border-radius: 30px;
   transition: 0.5s;
-  animation: iconAnimation 3s ease;
-  animation-fill-mode: forwards;
 }
 .icon-box:hover {
   padding-left: 30px;
@@ -152,9 +121,6 @@ a {
   height: 100px;
   width: 100px;
 
-  display: relative;
-  transform: translateY(120px);
-
   overflow: hidden;
 
   justify-content: center;
@@ -165,8 +131,6 @@ a {
   border: 2px solid black;
   border-radius: 30px;
   transition: 0.5s;
-  animation: iconAnimation 3s ease;
-  animation-fill-mode: forwards;
 }
 .icon-box4:hover {
   padding-left: 26px;
